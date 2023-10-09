@@ -12,6 +12,7 @@ class User(AbstractUser):
 
     middle_name = models.CharField(max_length=30, verbose_name='Отчество')
     first_login = models.DateTimeField(blank=True, null=True)
+    phone_number = models.CharField(max_length=30)
     avatar = models.ImageField(upload_to='user/avatar', blank=True, null=True)
     bio = models.TextField(blank=True, null=True)
     github = models.CharField(max_length=30, blank=True)
