@@ -34,7 +34,8 @@ INSTALLED_APPS = [
     'drf_yasg',
     
     #apps
-    'apps.profiles.apps.ProfilesConfig'
+    'apps.profiles.apps.ProfilesConfig',
+    'apps.followers.apps.FollowersConfig'
 ]
 
 MIDDLEWARE = [
