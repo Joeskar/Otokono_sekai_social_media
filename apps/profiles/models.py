@@ -12,9 +12,9 @@ class User(AbstractUser):
 
     middle_name = models.CharField(max_length=30, verbose_name='Отчество')
     first_login = models.DateTimeField(blank=True, null=True)
-    phone_number = models.CharField(max_length=30)
-    avatar = models.ImageField(upload_to='user/avatar', blank=True, null=True)
-    bio = models.TextField(blank=True, null=True)
+    phone_number = models.CharField(max_length=30, verbose_name='Номер телефона')
+    avatar = models.ImageField(upload_to='user/avatar', blank=True, null=True, verbose_name='Аватарка')
+    bio = models.TextField(blank=True, null=True, verbose_name='Ава')
     github = models.CharField(max_length=30, blank=True)
-    birthday = models.DateTimeField(blank=True, null=True)
+    birthday = models.DateTimeField(blank=True, null=True, verbose_name='День рождение')
     gender = models.CharField(max_length=15, choices=GENDER, default='male')
