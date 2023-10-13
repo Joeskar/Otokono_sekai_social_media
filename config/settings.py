@@ -32,9 +32,12 @@ INSTALLED_APPS = [
     'rest_framework',
     'djoser',
     'drf_yasg',
+    'mptt',
     
     #apps
     'apps.profiles.apps.ProfilesConfig',
+    'apps.wall.apps.WallConfig',
+    'apps.comments.apps.CommentsConfig',
     'apps.followers.apps.FollowersConfig'
 ]
 
